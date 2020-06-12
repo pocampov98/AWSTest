@@ -47,7 +47,6 @@ public class DatabaseAccess {
                     new ProvisionedThroughput(10L, 10L));
             table.waitForActive();
             System.out.println("Success.  Table status: " + table.getDescription().getTableStatus());
-
         }
         catch (Exception e) {
             System.err.println("Unable to create table: ");

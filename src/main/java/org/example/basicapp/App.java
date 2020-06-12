@@ -19,13 +19,13 @@ public class App {
     public static void main(String[] args) throws Exception {
         DatabaseAccess dbAccess = new DatabaseAccess();
 
-        //dbAccess.createTable("Movies");
+        dbAccess.createTable("Movies");
 
         //dbAccess.loadDataFromJSONFile("Movies","moviedata.json");
 
-        //dbAccess.addNewItem("Movies",2015,"The Big New Movie","Nothing happens at all.",0);
+        dbAccess.addNewItem("Movies",2015,"The Big New Movie","Nothing happens at all.",0);
 
-        //dbAccess.readItem("Movies",2015,"The Big New Movie");
+        dbAccess.readItem("Movies",2015,"The Big New Movie");
 
         //String[] actors = {"Larry", "Moe", "Curly"};
         //dbAccess.updateItem("Movies",2015,"The Big New Movie",5.5,"Everything happens all at once.", actors);
